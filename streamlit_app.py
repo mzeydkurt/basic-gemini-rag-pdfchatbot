@@ -1,7 +1,5 @@
 import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
-import vertexai
-
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.document_loaders import PyPDFLoader
@@ -16,8 +14,6 @@ import tempfile
 # .env dosyasını yükle
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
-project_id = "your-gcp-project-id"  # <<< Burayı kendi projenizle değiştirin
-region = "us-central1"              # <<< Burayı kendi GCP bölgenize göre değiştirin
 
 # API anahtarı kontrolü
 if not api_key:
@@ -25,13 +21,6 @@ if not api_key:
 
 # Google API ortam değişkenini ayarla
 os.environ["GOOGLE_API_KEY"] = api_key
-
-# Vertex AI başlat
-try:
-    vertexai.init(project=project_id, location=region)
-except Exception as e:
-    st.error(f"Vertex AI başlatılamadı: {e}")
-    st.stop()
 
 # Streamlit sayfa ayarları
 st.set_page_config(page_title="PDF Chatbot", page_icon="🤖")
