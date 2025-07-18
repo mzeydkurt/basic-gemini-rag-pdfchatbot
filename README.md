@@ -75,7 +75,7 @@ Aşağıda uygulamanın çalışır hâline ait bir ekran görüntüsü yer alma
 
  - Eğer .venv dosyasını taşıyamadıysan, bu dosyadaki bağımlılıkları ```pip freeze > requirements.txt``` komutu ile tekrar oluşturabilirsin.
 
- - sss_vectordb klasörü, embedding veritabanını içerir. Mevcut dosyalarla birlikte çalışmak için bu klasörü silmeden çalıştır.
+ - sss_vectorstore klasörü, embedding veritabanını içerir. Mevcut dosyalarla birlikte çalışmak için bu klasörü silmeden çalıştır.
 
 ---
 
