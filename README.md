@@ -20,7 +20,7 @@ Bu proje, bir RAG (Retrieval-Augmented Generation) mimarisine sahip PDF tabanlı
 ## 📷 Uygulama Arayüzü
 Aşağıda uygulamanın çalışır hâline ait bir ekran görüntüsü yer almaktadır:
 
-![Uygulama Arayüzü](images/basic-gemini-rag-pdfchatbot-streamlit-screenshot.png)
+![Uygulama Arayüzü](C:\Users\mzeyd\Pictures\Screenshots\Ekran görüntüsü 2025-07-18 151922.png)
 
 
 
